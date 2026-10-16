@@ -30,11 +30,13 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## 01 · What I build
+## 01 · Systems
 
-- Clinical agents that answer from a protocol, score the draft, and flag a person when the source does not support the claim.
-- Genomics and neuro-data tools that keep an evidence trail: ACMG triage, EEG conversion, and neural-privacy audits.
-- Analytics pipelines that score a delayed hospital discharge and show a placement step a person can approve.
+| Plane | Control surface |
+| --- | --- |
+| Agents | LangGraph `retrieve → generate → reflect → output`. A Python score plus a temperature-0 verdict. FLAG is a state. |
+| Warehouse | DuckDB `raw` → dbt marts → LightGBM. The build fails if a label leaked. A referral waits on a person. |
+| Evidence | One ACMG node per code. EEG `resample_poly` with an append-only chain. A policy field needs a character span. |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
@@ -50,15 +52,13 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="https://github.com/TechieGoku2623/Sentinal_RAG">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/sentinel-rag-dark.svg">
-    <img src="assets/cards/sentinel-rag-light.svg" alt="Sentinel-RAG. Guideline answers that flag a clinician instead of guessing. Stack: LangGraph, Chroma, FastAPI.">
+    <img src="assets/cards/sentinel-rag-light.svg" alt="Sentinel-RAG. Child retrieve, parent draft, reflect or FLAG. Stack: LangGraph, Chroma, FastAPI.">
   </picture>
 </a>
 
-**Problem.** A fluent answer about a dose can still be wrong.
+`retrieve → generate → reflect → output`
 
-**Approach.** Child chunks are retrieved from Chroma and the parent chunk is what the draft sees. Reflect mixes a Python grounding score with a temperature-0 check, then returns, retries, or flags.
-
-**Result.** High confidence is returned. Medium confidence widens the retrieval and retries. Low confidence is marked FLAG for a clinician. The bundled corpus is a fictional diabetes guideline.
+Child hit in Chroma, parent context to Llama 3.1 8B. Empty context, an off-corpus query, or `CONTRADICTED` is FLAG. The in-repo corpus is a fictional diabetes guideline. Not a device.
 
 [▶ Demo](https://github.com/TechieGoku2623/Sentinal_RAG/blob/main/sentinel-rag/docs/demo.gif) · [📐 Architecture](https://github.com/TechieGoku2623/Sentinal_RAG/blob/main/sentinel-rag/docs/ARCHITECTURE.md) · [📄 README](https://github.com/TechieGoku2623/Sentinal_RAG/blob/main/sentinel-rag/README.md)
 
@@ -68,15 +68,13 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="https://github.com/TechieGoku2623/Clear-Bed">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/clearbed-dark.svg">
-    <img src="assets/cards/clearbed-light.svg" alt="ClearBed. Who is still in a bed after they are medically ready to leave. Stack: dbt, DuckDB, LightGBM.">
+    <img src="assets/cards/clearbed-light.svg" alt="ClearBed. Stay mart, leakage gate, then a human interrupt. Stack: dbt, DuckDB, LightGBM.">
   </picture>
 </a>
 
-**Problem.** A patient can be medically ready to leave and still occupy a staffed bed.
+`raw → dbt marts → LightGBM → interrupt`
 
-**Approach.** DuckDB and dbt build the stay. A leakage check runs before LightGBM and SHAP. A LangGraph agent matches CMS nursing homes and waits for a person to approve anything that would leave the building.
-
-**Result.** The walkthrough is a Boston census against the national CMS Care Compare file. Patients in the demo are synthetic. This is not a medical device.
+Stuck-risk, barrier type, and avoidable days. The quality report fails on a leaked label, high nulls, or too few stays. `sent` is recorded only after approval. Nothing is transmitted. Stays are synthetic. The CMS Care Compare file is the national nursing-home catalog.
 
 [▶ Demo](https://github.com/TechieGoku2623/Clear-Bed/blob/main/docs/walkthrough.gif) · [📐 Architecture](https://github.com/TechieGoku2623/Clear-Bed#architecture) · [📄 README](https://github.com/TechieGoku2623/Clear-Bed)
 
@@ -88,15 +86,13 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="https://github.com/TechieGoku2623/acmg-triage">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/acmg-triage-dark.svg">
-    <img src="assets/cards/acmg-triage-light.svg" alt="acmg-triage. An ACMG/AMP call with a trail, including a refusal. Stack: Python, FastAPI, DuckDB.">
+    <img src="assets/cards/acmg-triage-light.svg" alt="acmg-triage. One ACMG node per code, cache only, refusal path. Stack: Python, FastAPI, DuckDB.">
   </picture>
 </a>
 
-**Problem.** A variant of uncertain significance needs a classification a reviewer can retrace, including a refusal.
+`rules → VCEP → cache → refuse`
 
-**Approach.** A typed graph runs one node per ACMG/AMP code, applies a VCEP overlay, and reads literature only from a committed cache.
-
-**Result.** On 100 designed probes, concordance with the rules-only baseline is 0.670. Turning the literature path on does not change that number. Conflicting and uncovered variants are refused.
+Pydantic `GraphState`, one node per ACMG/AMP code, literature from a committed cache only. No live LLM. Conflict or an uncovered variant is refused. Concordance with the rules-only baseline is 0.670 on 100 designed probes.
 
 [▶ Demo](https://github.com/TechieGoku2623/acmg-triage/blob/main/demo/out/acmg-triage-demo.gif) · [📐 Architecture](https://github.com/TechieGoku2623/acmg-triage/blob/main/src/acmg_triage/graph.py) · [📄 README](https://github.com/TechieGoku2623/acmg-triage)
 
@@ -106,15 +102,13 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="https://github.com/TechieGoku2623/neuroprivacy">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/neuroprivacy-dark.svg">
-    <img src="assets/cards/neuroprivacy-light.svg" alt="neuroprivacy. Consumer neural-data policies scored against two state laws. Stack: Python, Pydantic, rules.">
+    <img src="assets/cards/neuroprivacy-light.svg" alt="neuroprivacy. Span offsets scored against two state statutes. Stack: Python, Pydantic, rules.">
   </picture>
 </a>
 
-**Problem.** A consumer neural-data policy is hard to compare with a state statute line by line.
+`span → offset → rule → statute`
 
-**Approach.** The extractor pulls span-cited fields from policy HTML and scores them with deterministic rules for Colorado HB24-1058 and California SB 1223.
-
-**Result.** Mean field F1 is 1.000 against 20 hand-labeled sample policies. The live public-policy hold-out is still open. The output is not a legal opinion.
+Deterministic extract. A true field with no character offset is a citation gap. Rules cover Colorado HB24-1058 and California SB 1223. Field F1 is 1.000 on 20 hand labels. The live hold-out is open. Not a legal opinion.
 
 [▶ Demo](https://github.com/TechieGoku2623/neuroprivacy/blob/main/demo/out/neuroprivacy-demo.gif) · [📐 Architecture](https://github.com/TechieGoku2623/neuroprivacy/blob/main/src/neuroprivacy/scoring.py) · [📄 README](https://github.com/TechieGoku2623/neuroprivacy)
 
@@ -126,15 +120,13 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="https://github.com/TechieGoku2623/eeg-harmonize">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/eeg-harmonize-dark.svg">
-    <img src="assets/cards/eeg-harmonize-light.svg" alt="eeg-harmonize. One EEG schema, and a record of every conversion. Stack: NumPy, SciPy, EDF.">
+    <img src="assets/cards/eeg-harmonize-light.svg" alt="eeg-harmonize. EDF, unit check, montage, resample, provenance. Stack: NumPy, SciPy, EDF.">
   </picture>
 </a>
 
-**Problem.** The same EEG channel or annotation goes by different names across public corpora, so a conversion bug looks like a dataset effect.
+`read → units → montage → resample_poly`
 
-**Approach.** A canonical record, unit checks, and an append-only provenance chain: read, check units, map channels, resample.
-
-**Result.** Designed EDF clips convert, and a bad unit scale is rejected. The cross-dataset transfer matrix on TUH was not run. TUH is not in the repository.
+A bad unit scale is rejected. Each step is appended to a DuckDB provenance chain. The clips are designed. TUH transfer was not run, and TUH is not in the repository.
 
 [▶ Demo](https://github.com/TechieGoku2623/eeg-harmonize/blob/main/demo/out/eeg-harmonize-demo.gif) · [📐 Architecture](https://github.com/TechieGoku2623/eeg-harmonize/blob/main/src/eeg_harmonize/convert.py) · [📄 README](https://github.com/TechieGoku2623/eeg-harmonize)
 
@@ -144,15 +136,13 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="https://github.com/TechieGoku2623/Hamsa">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/hamsa-dark.svg">
-    <img src="assets/cards/hamsa-light.svg" alt="Hamsa. Indic shop orders inside an encrypted chat. Prices stay checked. Stack: FastAPI, React, WebCrypto.">
+    <img src="assets/cards/hamsa-light.svg" alt="Hamsa. P-256, AES-GCM, catalog price, UPI intent. Stack: FastAPI, React, WebCrypto.">
   </picture>
 </a>
 
-**Problem.** A shop order in Hindi or Tamil still has to become a cart, a price the model cannot invent, and a payment the app does not hold.
+`P-256 → HKDF → AES-GCM → verify_line`
 
-**Approach.** The browser encrypts chats with P-256 and AES-GCM. A FastAPI agent fills the cart, a verifier rejects invented prices, and UPI is an intent to the merchant.
-
-**Result.** The local demo runs a guest order, an owner confirmation, and an encrypted chat. No user or revenue figures are claimed.
+Non-exportable device key. Per-message content key, with conversation, message, and sender bound as additional data. Unknown SKU, bad quantity, or missing stock is rejected. Price is copied from `price_paise`. UPI is an intent. The app does not hold the money.
 
 [▶ Demo](https://github.com/TechieGoku2623/Hamsa/blob/main/demo/hamsa-demo.gif) · [📐 Architecture](https://github.com/TechieGoku2623/Hamsa/blob/main/docs/architecture.md) · [📄 README](https://github.com/TechieGoku2623/Hamsa)
 
@@ -168,23 +158,19 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 ## 03 · Flagship: Sentinel-RAG
 
 <details>
-<summary>How the clinical protocol guardian decides to answer, retry, or flag</summary>
+<summary>Compiled graph · retrieve, generate, reflect, output</summary>
 
-Sentinel-RAG answers only from guidelines the operator ingested, then scores the draft before anyone sees it. Research prototype. Not a medical device. Do not use it for a clinical decision.
+Research prototype. Not a medical device. Do not use it for a clinical decision.
 
 ```mermaid
 flowchart LR
-  retrieve["retrieve\nChroma top-k"] --> generate["generate\nGroq Llama 3.1 8B"]
-  generate --> reflect["reflect\ndeterministic score"]
-  reflect -->|"medium, retries left"| retrieve
-  reflect -->|"high, or FLAG"| output["output"]
+  retrieve["retrieve\nChroma child"] --> generate["generate\nparent + Llama 3.1 8B"]
+  generate --> reflect["reflect\nscore + temp 0"]
+  reflect -->|"retry"| retrieve
+  reflect -->|"return or FLAG"| output["output"]
 ```
 
-The compiled graph in `sentinel-rag/src/agent.py` has four nodes: `retrieve`, `generate`, `reflect`, `output`. FLAG is a decision inside `reflect`, written into the response by `output`. It is not a fifth node.
-
-1. **Retrieve.** The query hits child chunks in a local Chroma index. Generation is handed the linked parent chunk.
-2. **Generate.** The draft is written from that parent. Live generation needs `GROQ_API_KEY`. The model pin in the repo is Llama 3.1 8B via Groq.
-3. **Reflect.** A Python score and a temperature-0 check decide the route. Medium confidence widens retrieval and loops back to `retrieve`. High confidence, a supported verdict, or a low score after retries goes to `output`. A low score, a contradicted draft, or a query outside the corpus is marked FLAG for a clinician. The ordered policy is written out under Where it goes deep.
+Four nodes in `sentinel-rag/src/agent.py`. FLAG is written by `output` from a decision inside `reflect`. It is not a fifth node. Live generation needs `GROQ_API_KEY`. The route order is in section 05.
 
 [▶ Watch the demo](https://github.com/TechieGoku2623/Sentinal_RAG/blob/main/sentinel-rag/docs/demo.gif) · [Full architecture](https://github.com/TechieGoku2623/Sentinal_RAG/blob/main/sentinel-rag/docs/ARCHITECTURE.md)
 
