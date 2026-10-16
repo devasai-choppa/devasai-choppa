@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 336" role="img" aria-labelledby="title desc">
+  <title id="title">Sentinel-RAG</title>
+  <desc id="desc">Guideline answers that flag a clinician instead of guessing.</desc>
+  <defs>
+    <clipPath id="card">
+      <rect width="640" height="336" rx="16"/>
+    </clipPath>
+  </defs>
+  <rect width="640" height="336" rx="16" fill="#FFFFFF" stroke="#D3DEE5" stroke-width="1"/>
+  <rect x="0" y="0" width="640" height="6" fill="#0F6E6A" clip-path="url(#card)"/>
+  <path d="M 32.0 210.0 H 124.2 l 10 -7 l 8 12 l 12 -34 l 14 52 l 11 -28 l 8 5 H 297.0 l 28 -16 l 36 12 H 608.0" fill="none" stroke="#0F6E6A" stroke-opacity="0.28" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="56" fill="#0F6E6A" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.8">CLINICAL RAG</text>
+  <text x="32" y="108" fill="#0B1F33" font-family="Inter, Helvetica, Arial, sans-serif" font-size="32" font-weight="600">Sentinel-RAG</text>
+  <text x="32" y="156" fill="#4E6272" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18">Guideline answers that flag a clinician instead of guessing.</text>
+  <g><rect x="32.0" y="268.0" width="83.3" height="26" rx="13" fill="#E5F4F3"/><text x="42.0" y="285.5" fill="#0C4F4C" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">LangGraph</text></g><g><rect x="123.3" y="268.0" width="65.1" height="26" rx="13" fill="#E5F4F3"/><text x="133.3" y="285.5" fill="#0C4F4C" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Chroma</text></g><g><rect x="196.4" y="268.0" width="63.7" height="26" rx="13" fill="#E5F4F3"/><text x="206.4" y="285.5" fill="#0C4F4C" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">FastAPI</text></g>
+</svg>

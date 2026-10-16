@@ -1,0 +1,12 @@
+.cursor/
+.cursorrules
+.cursorignore
+**/.cursor/
+agent-transcripts/
+*.log
+
+# Local QA renders
+preview/shots/
+__pycache__/
+.venv/
+.env

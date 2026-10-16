@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Sentinel-RAG</title>
+  <desc id="desc">Guideline answers that flag a clinician instead of guessing.</desc>
+  <rect width="1280" height="640" fill="#F4F7F8"/>
+  <rect x="0" y="0" width="1280" height="8" fill="#0F6E6A"/>
+  <text x="80" y="160" fill="#0F6E6A" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2.4">CLINICAL RAG</text>
+  <text x="80" y="250" fill="#0B1F33" font-family="Inter, Helvetica, Arial, sans-serif" font-size="64" font-weight="600">Sentinel-RAG</text>
+  <text x="80" y="318" fill="#4E6272" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26">Guideline answers that flag a clinician instead of guessing.</text>
+  <g><rect x="80.0" y="360.0" width="83.3" height="26" rx="13" fill="#E5F4F3"/><text x="90.0" y="377.5" fill="#0C4F4C" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">LangGraph</text></g><g><rect x="173.3" y="360.0" width="65.1" height="26" rx="13" fill="#E5F4F3"/><text x="183.3" y="377.5" fill="#0C4F4C" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Chroma</text></g><g><rect x="248.4" y="360.0" width="63.7" height="26" rx="13" fill="#E5F4F3"/><text x="258.4" y="377.5" fill="#0C4F4C" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">FastAPI</text></g>
+  <path d="M 80.0 500.0 H 259.2 l 10 -7 l 8 12 l 12 -34 l 14 52 l 11 -28 l 8 5 H 595.2 l 28 -16 l 36 12 H 1200.0" fill="none" stroke="#0F6E6A" stroke-opacity="0.95" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="580" fill="#7C8E9C" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18">Devasai Pranatheswar Choppa  ·  Healthcare data × Applied AI</text>
+</svg>

@@ -1,0 +1,35 @@
+name: Contribution snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate light and dark snakes
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: TechieGoku2623
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=0B1F33&color_dots=E4EEEF,C5E6E3,6FCCC6,0F6E6A,0A3F3C
+            dist/github-contribution-grid-snake-dark.svg?color_snake=E3B15A&color_dots=0C1C2E,134E4A,0F766E,2DD4BF,E7F7F6
+
+      - name: Commit snake SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/github-contribution-grid-snake.svg dist/github-contribution-grid-snake-dark.svg
+          if git diff --staged --quiet; then
+            echo "Snake SVGs unchanged."
+            exit 0
+          fi
+          git commit -m "chore: update contribution snake"
+          git push

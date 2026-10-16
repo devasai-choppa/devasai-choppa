@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">acmg-triage</title>
+  <desc id="desc">An ACMG/AMP call with a trail, including a refusal.</desc>
+  <rect width="1280" height="640" fill="#07131C"/>
+  <rect x="0" y="0" width="1280" height="8" fill="#3CBBB4"/>
+  <text x="80" y="160" fill="#3CBBB4" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2.4">GENOMICS</text>
+  <text x="80" y="250" fill="#E7EEF4" font-family="Inter, Helvetica, Arial, sans-serif" font-size="64" font-weight="600">acmg-triage</text>
+  <text x="80" y="318" fill="#93A4B5" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26">An ACMG/AMP call with a trail, including a refusal.</text>
+  <g><rect x="80.0" y="360.0" width="60.6" height="26" rx="13" fill="#12343A"/><text x="90.0" y="377.5" fill="#D5F3F0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Python</text></g><g><rect x="150.6" y="360.0" width="63.7" height="26" rx="13" fill="#12343A"/><text x="160.6" y="377.5" fill="#D5F3F0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">FastAPI</text></g><g><rect x="224.2" y="360.0" width="66.0" height="26" rx="13" fill="#12343A"/><text x="234.2" y="377.5" fill="#D5F3F0" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">DuckDB</text></g>
+  <path d="M 80.0 500.0 H 259.2 l 10 -7 l 8 12 l 12 -34 l 14 52 l 11 -28 l 8 5 H 595.2 l 28 -16 l 36 12 H 1200.0" fill="none" stroke="#3CBBB4" stroke-opacity="0.95" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="580" fill="#6E8294" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18">Devasai Pranatheswar Choppa  ·  Healthcare data × Applied AI</text>
+</svg>

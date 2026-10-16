@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 44" role="img" aria-labelledby="title">
+  <title id="title">Building clinical AI agents. Turning messy health data into decisions. Data Analyst to AI Engineer.</title>
+  <g opacity="1">
+    <text x="0" y="30" fill="#0B1F33" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500">Building clinical AI agents</text>
+    <rect x="276.9" y="12" width="2" height="22" fill="#0F6E6A"/>
+    <animate attributeName="opacity" values="1;1;0;0;0;0" keyTimes="0;0.30;0.36;0.66;0.94;1" dur="12s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <text x="0" y="30" fill="#0B1F33" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500">Turning messy health data into decisions</text>
+    <rect x="438.0" y="12" width="2" height="22" fill="#0F6E6A"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.30;0.36;0.64;0.70;1" dur="12s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <text x="0" y="30" fill="#0B1F33" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="500">Data Analyst → AI Engineer</text>
+    <rect x="294.8" y="12" width="2" height="22" fill="#0F6E6A"/>
+    <animate attributeName="opacity" values="0;0;0;0;1;1" keyTimes="0;0.64;0.70;0.94;0.98;1" dur="12s" repeatCount="indefinite"/>
+  </g>
+</svg>

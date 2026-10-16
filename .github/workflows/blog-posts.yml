@@ -1,0 +1,31 @@
+name: Blog posts
+
+# TODO: No public RSS feed was found for TechieGoku2623.
+# GitHub profile blog field is empty, and none of the public repos publish a feed.
+# When Deva has a feed:
+#   1. Set feed_list below to the RSS or Atom URL.
+#   2. Remove `if: false` from the job.
+#   3. Uncomment the schedule.
+# Until then this workflow does not run, including on workflow_dispatch.
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "30 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update the blog post list
+        uses: gautamkrishnar/blog-post-workflow@1.9.7
+        with:
+          feed_list: ""
+          max_post_count: 5
+          commit_message: "chore: update blog posts"

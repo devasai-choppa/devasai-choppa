@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 128" role="img" aria-labelledby="title">
+  <title id="title">Contribution snake placeholder. The daily workflow replaces this file with the animated graph.</title>
+  <rect width="880" height="128" rx="12" fill="#07131C"/>
+  <path d="M40 64 H180 l12 -6 l8 12 l12 -36 l14 54 l10 -24 l8 6 H840" fill="none" stroke="#3CBBB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="104" fill="#93A4B5" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14">Contribution snake updates daily from this repository's workflow.</text>
+</svg>

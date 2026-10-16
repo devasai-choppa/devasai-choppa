@@ -1,0 +1,26 @@
+name: Latest activity
+
+on:
+  schedule:
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update the recent activity block
+        uses: jamesgeorge007/github-activity-readme@v0.5.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: TechieGoku2623
+          MAX_LINES: 5
+          COMMIT_MSG: "chore: update recent activity"
+          EMPTY_COMMIT_MSG: "chore: keep activity workflow eligible"
+          FILTER_EVENTS: "PullRequestEvent,ReleaseEvent,IssuesEvent,IssueCommentEvent,CreateEvent"
