@@ -1,0 +1,24 @@
+[
+  {
+    "type": "normal",
+    "fileName": "profile-hud-light.svg",
+    "backgroundColor": "#F4F7F8",
+    "foregroundColor": "#0B1F33",
+    "strongColor": "#0C7C78",
+    "weakColor": "#6C8194",
+    "radarColor": "#C2185B",
+    "growingAnimation": true,
+    "contribColors": ["#F4F7F8", "#D5E8E6", "#7DCCC4", "#0C7C78", "#C2185B"]
+  },
+  {
+    "type": "normal",
+    "fileName": "profile-hud-dark.svg",
+    "backgroundColor": "#0D1117",
+    "foregroundColor": "#E6EDF3",
+    "strongColor": "#00F5D4",
+    "weakColor": "#5C6E7E",
+    "radarColor": "#F72585",
+    "growingAnimation": true,
+    "contribColors": ["#0D1117", "#12343A", "#0F766E", "#00F5D4", "#F72585"]
+  }
+]
