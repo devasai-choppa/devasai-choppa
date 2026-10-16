@@ -76,7 +76,7 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 
 Child hit in Chroma, parent context to Llama 3.1 8B. Empty context, an off-corpus query, or `CONTRADICTED` is FLAG. The in-repo corpus is a fictional diabetes guideline. Not a device.
 
-[▶ Demo](https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/docs/demo.gif) · [📐 Architecture](https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/docs/ARCHITECTURE.md) · [📄 README](https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/README.md)
+<a href="https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/docs/demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/docs/ARCHITECTURE.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 <td width="50%" valign="top">
@@ -92,7 +92,7 @@ Child hit in Chroma, parent context to Llama 3.1 8B. Empty context, an off-corpu
 
 Stuck-risk, barrier type, and avoidable days. The quality report fails on a leaked label, high nulls, or too few stays. `sent` is recorded only after approval. Nothing is transmitted. Stays are synthetic. The CMS Care Compare file is the national nursing-home catalog.
 
-[▶ Demo](https://github.com/devasai-choppa/Clear-Bed/blob/main/docs/walkthrough.gif) · [📐 Architecture](https://github.com/devasai-choppa/Clear-Bed#architecture) · [📄 README](https://github.com/devasai-choppa/Clear-Bed)
+<a href="https://github.com/devasai-choppa/Clear-Bed/blob/main/docs/walkthrough.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Clear-Bed#architecture"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Clear-Bed"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 </tr>
@@ -110,7 +110,7 @@ Stuck-risk, barrier type, and avoidable days. The quality report fails on a leak
 
 Pydantic `GraphState`, one node per ACMG/AMP code, literature from a committed cache only. No live LLM. Conflict or an uncovered variant is refused. Concordance with the rules-only baseline is 0.670 on 100 designed probes.
 
-[▶ Demo](https://github.com/devasai-choppa/acmg-triage/blob/main/demo/out/acmg-triage-demo.gif) · [📐 Architecture](https://github.com/devasai-choppa/acmg-triage/blob/main/src/acmg_triage/graph.py) · [📄 README](https://github.com/devasai-choppa/acmg-triage)
+<a href="https://github.com/devasai-choppa/acmg-triage/blob/main/demo/out/acmg-triage-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/acmg-triage/blob/main/src/acmg_triage/graph.py"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/acmg-triage"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 <td width="50%" valign="top">
@@ -126,7 +126,7 @@ Pydantic `GraphState`, one node per ACMG/AMP code, literature from a committed c
 
 Deterministic extract. A true field with no character offset is a citation gap. Rules cover Colorado HB24-1058 and California SB 1223. Field F1 is 1.000 on 20 hand labels. The live hold-out is open. Not a legal opinion.
 
-[▶ Demo](https://github.com/devasai-choppa/neuroprivacy/blob/main/demo/out/neuroprivacy-demo.gif) · [📐 Architecture](https://github.com/devasai-choppa/neuroprivacy/blob/main/src/neuroprivacy/scoring.py) · [📄 README](https://github.com/devasai-choppa/neuroprivacy)
+<a href="https://github.com/devasai-choppa/neuroprivacy/blob/main/demo/out/neuroprivacy-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/neuroprivacy/blob/main/src/neuroprivacy/scoring.py"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/neuroprivacy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 </tr>
@@ -144,7 +144,7 @@ Deterministic extract. A true field with no character offset is a citation gap. 
 
 A bad unit scale is rejected. Each step is appended to a DuckDB provenance chain. The clips are designed. TUH transfer was not run, and TUH is not in the repository.
 
-[▶ Demo](https://github.com/devasai-choppa/eeg-harmonize/blob/main/demo/out/eeg-harmonize-demo.gif) · [📐 Architecture](https://github.com/devasai-choppa/eeg-harmonize/blob/main/src/eeg_harmonize/convert.py) · [📄 README](https://github.com/devasai-choppa/eeg-harmonize)
+<a href="https://github.com/devasai-choppa/eeg-harmonize/blob/main/demo/out/eeg-harmonize-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/eeg-harmonize/blob/main/src/eeg_harmonize/convert.py"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/eeg-harmonize"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 <td width="50%" valign="top">
@@ -160,7 +160,7 @@ A bad unit scale is rejected. Each step is appended to a DuckDB provenance chain
 
 Non-exportable device key. Per-message content key, with conversation, message, and sender bound as additional data. Unknown SKU, bad quantity, or missing stock is rejected. Price is copied from `price_paise`. UPI is an intent. The app does not hold the money.
 
-[▶ Demo](https://github.com/devasai-choppa/Hamsa/blob/main/demo/hamsa-demo.gif) · [📐 Architecture](https://github.com/devasai-choppa/Hamsa/blob/main/docs/architecture.md) · [📄 README](https://github.com/devasai-choppa/Hamsa)
+<a href="https://github.com/devasai-choppa/Hamsa/blob/main/demo/hamsa-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Hamsa/blob/main/docs/architecture.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Hamsa"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 </tr>
