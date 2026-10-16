@@ -5,7 +5,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/typing-dark.svg">
-  <img src="assets/typing-light.svg" alt="Building clinical AI agents. Turning messy health data into decisions. Data Analyst to AI Engineer." width="640">
+  <img src="assets/typing-light.svg" alt="Building clinical AI agents. Turning messy health data into decisions. Data Analyst to AI Engineer." width="760">
 </picture>
 
 Data Analyst at NextGenTek USA · Boston  
@@ -56,7 +56,7 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 
 **Problem.** A fluent answer about a dose can still be wrong.
 
-**Approach.** A LangGraph loop retrieves the clinic's own guidelines from Chroma, drafts with Groq, and scores grounding in code.
+**Approach.** Child chunks are retrieved from Chroma and the parent chunk is what the draft sees. Reflect mixes a Python grounding score with a temperature-0 check, then returns, retries, or flags.
 
 **Result.** High confidence is returned. Medium confidence widens the retrieval and retries. Low confidence is marked FLAG for a clinician. The bundled corpus is a fictional diabetes guideline.
 
@@ -74,7 +74,7 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 
 **Problem.** A patient can be medically ready to leave and still occupy a staffed bed.
 
-**Approach.** DuckDB and dbt build the stay. LightGBM plus SHAP score stuck-risk. A LangGraph agent matches CMS nursing homes and waits for a person to approve anything that would leave the building.
+**Approach.** DuckDB and dbt build the stay. A leakage check runs before LightGBM and SHAP. A LangGraph agent matches CMS nursing homes and waits for a person to approve anything that would leave the building.
 
 **Result.** The walkthrough is a Boston census against the national CMS Care Compare file. Patients in the demo are synthetic. This is not a medical device.
 
@@ -182,9 +182,9 @@ flowchart LR
 
 The compiled graph in `sentinel-rag/src/agent.py` has four nodes: `retrieve`, `generate`, `reflect`, `output`. FLAG is a decision inside `reflect`, written into the response by `output`. It is not a fifth node.
 
-1. **Retrieve.** The query hits a local Chroma index of the ingested protocol documents.
-2. **Generate.** The draft is written from those chunks. Live generation needs `GROQ_API_KEY`. The model pin in the repo is Llama 3.1 8B via Groq.
-3. **Reflect.** Grounding is scored in code. Medium confidence widens retrieval and loops back to `retrieve`. High confidence, or a low score after retries, goes to `output`. A low score, a contradicted draft, or a query outside the corpus is marked FLAG for a clinician.
+1. **Retrieve.** The query hits child chunks in a local Chroma index. Generation is handed the linked parent chunk.
+2. **Generate.** The draft is written from that parent. Live generation needs `GROQ_API_KEY`. The model pin in the repo is Llama 3.1 8B via Groq.
+3. **Reflect.** A Python score and a temperature-0 check decide the route. Medium confidence widens retrieval and loops back to `retrieve`. High confidence, a supported verdict, or a low score after retries goes to `output`. A low score, a contradicted draft, or a query outside the corpus is marked FLAG for a clinician. The ordered policy is written out under Where it goes deep.
 
 [▶ Watch the demo](https://github.com/TechieGoku2623/Sentinal_RAG/blob/main/sentinel-rag/docs/demo.gif) · [Full architecture](https://github.com/TechieGoku2623/Sentinal_RAG/blob/main/sentinel-rag/docs/ARCHITECTURE.md)
 
@@ -195,7 +195,9 @@ The compiled graph in `sentinel-rag/src/agent.py` has four nodes: `retrieve`, `g
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Tech stack
+## Skills
+
+Every name below is imported in a public repo. The next section is the part I actually run.
 
 **Languages**
 
@@ -206,14 +208,14 @@ The compiled graph in `sentinel-rag/src/agent.py` has four nodes: `retrieve`, `g
 
 Python · TypeScript · SQL
 
-**Data**
+**Data platforms**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-data-dark.svg">
-  <img src="assets/stack-data-light.svg" alt="Data tools: DuckDB, pandas, dbt, SQL" height="32">
+  <img src="assets/stack-data-light.svg" alt="Data platforms: DuckDB, pandas, dbt, SQL" height="32">
 </picture>
 
-**ML and GenAI**
+**Models**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=sklearn&theme=dark">
@@ -222,24 +224,57 @@ Python · TypeScript · SQL
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-ml-dark.svg">
-  <img src="assets/stack-ml-light.svg" alt="ML and GenAI tools: LightGBM, LangGraph, Chroma" height="32">
+  <img src="assets/stack-ml-light.svg" alt="Models: LightGBM and SHAP" height="32">
 </picture>
 
-**Cloud**
+**Agents and retrieval**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker&theme=dark">
-  <img src="https://skillicons.dev/icons?i=docker" alt="Docker" height="40">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-genai-dark.svg">
+  <img src="assets/stack-genai-light.svg" alt="Agents and retrieval: LangGraph, LangChain, Chroma, Groq" height="32">
 </picture>
 
-**BI**
+**Interfaces**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi,react,nextjs,docker&theme=dark">
+  <img src="https://skillicons.dev/icons?i=fastapi,react,nextjs,docker" alt="Interfaces: FastAPI, React, Next.js, Docker" height="40">
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-bi-dark.svg">
-  <img src="assets/stack-bi-light.svg" alt="BI: Streamlit" height="32">
+  <img src="assets/stack-bi-light.svg" alt="Streamlit" height="32">
 </picture>
 
-Streamlit is the dashboard in Sentinel-RAG and ClearBed.
+**Signals and contracts**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-signals-dark.svg">
+  <img src="assets/stack-signals-light.svg" alt="Signals and contracts: NumPy, SciPy, Pydantic" height="32">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img src="assets/divider-light.svg" alt="" width="100%">
+</picture>
+
+## Where it goes deep
+
+**Retrieval loop.** [Sentinel-RAG](https://github.com/TechieGoku2623/Sentinal_RAG) splits each guideline into a 500-word parent and 100-word children. Chroma stores both. Embeddings are `all-MiniLM-L6-v2`. Search hits the child. Generation reads the parent. The compiled LangGraph is `retrieve → generate → reflect → output`, with Llama 3.1 8B through Groq on the generate step.
+
+`reflect` blends a Python score (context coverage, uncertainty, specificity, contradiction) with a second model call at temperature 0. That call returns `SUPPORTED`, `PARTIALLY_SUPPORTED`, or `CONTRADICTED`. Empty context, a query that misses the corpus, or `CONTRADICTED` is FLAG. A `SUPPORTED` verdict, or a corpus-grounded draft already at or above 0.75, is returned. Otherwise a score at or above 0.85 is returned, and a score at or above 0.75 retries retrieval up to 2 times. Bedside mode can skip the second call when the heuristic is already high. An old source year lowers the score. The bundled corpus is a fictional diabetes guideline. Not a medical device.
+
+**Warehouse and discharge model.** [ClearBed](https://github.com/TechieGoku2623/Clear-Bed) loads Synthea into DuckDB `raw`. dbt builds `marts.feat_admission_snapshot` and `marts.fct_stay_labels`. LightGBM fits stuck-risk, barrier type, and avoidable days from that join. Categoricals are one-hot encoded. SHAP is read for the positive class. A quality report fails the build if a label column leaked onto the admission snapshot, if feature nulls are too high, or if the stay count is too small. The placement graph matches the national CMS Care Compare nursing-home file and interrupts until a person approves. Approve records `sent`. It does not transmit. Patients are synthetic. The model-card numbers are on that synthetic label.
+
+**Evidence graph.** [acmg-triage](https://github.com/TechieGoku2623/acmg-triage) keeps `GraphState` as a Pydantic model. Each ACMG/AMP rules code is its own node, then a VCEP overlay, then literature nodes that read only a committed cache. There is no live LLM on this graph. Conflicting calls and variants outside the catalog are refused. Concordance with the rules-only baseline is 0.670 on 100 designed probes.
+
+**Policy spans.** [neuroprivacy](https://github.com/TechieGoku2623/neuroprivacy) extracts with deterministic rules. A field marked true without a character offset is a citation gap. The scorer covers Colorado HB24-1058 and California SB 1223. Mean field F1 is 1.000 on 20 hand-labeled samples. The live public-policy hold-out is still open. The output is not a legal opinion.
+
+**EEG conversion.** [eeg-harmonize](https://github.com/TechieGoku2623/eeg-harmonize) reads EDF, rejects a bad unit scale, drops non-canonical channels, resamples with `scipy.signal.resample_poly`, and appends each step to a provenance chain. The clips in the repo are designed. The TUH transfer was not run, and TUH is not in the repository.
+
+**Encrypted cart.** [Hamsa](https://github.com/TechieGoku2623/Hamsa) gives each browser device a non-exportable P-256 ECDH key. The shared secret goes through HKDF into an AES-256-GCM key. Each message has its own content key, with the conversation, message, and sender ids bound as additional data. Cart changes pass `verify_line`, which rejects an unknown SKU, a bad quantity, or stock the catalog does not have. The price is copied from `price_paise` on that catalog row. UPI is an intent to the merchant. The app does not hold the money.
+
+**Classical ML, already measured.** [EEG motor imagery](https://github.com/TechieGoku2623/EEG-Motor-Imagery-Classifier) trains on PhysioNet EEGMMIDB with MNE and PyTorch. The band is about 8–30 Hz. CSP + SVM is 47.7% on the same person. EEGNet is 32.2% leave-one-subject-out. Those are the numbers published in that README. The 2023 voting-classifier paper is linked under Research.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
