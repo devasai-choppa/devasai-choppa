@@ -32,4 +32,5 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update contribution snake"
+          git pull --rebase origin main
           git push
