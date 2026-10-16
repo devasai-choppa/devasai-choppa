@@ -17,7 +17,7 @@ jobs:
       - name: Generate light and dark snakes
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: TechieGoku2623
+          github_user_name: devasai-choppa
           outputs: |
             dist/github-contribution-grid-snake.svg?color_snake=0B1F33&color_dots=E4EEEF,C5E6E3,6FCCC6,0F6E6A,0A3F3C
             dist/github-contribution-grid-snake-dark.svg?color_snake=E3B15A&color_dots=0C1C2E,134E4A,0F766E,2DD4BF,E7F7F6

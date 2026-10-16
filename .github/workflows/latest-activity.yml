@@ -19,7 +19,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          GH_USERNAME: TechieGoku2623
+          GH_USERNAME: devasai-choppa
           MAX_LINES: 5
           COMMIT_MSG: "chore: update recent activity"
           EMPTY_COMMIT_MSG: "chore: keep activity workflow eligible"
