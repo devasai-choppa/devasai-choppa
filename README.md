@@ -266,7 +266,7 @@ No public RSS feed is connected yet.
 
 <!--RECENT_ACTIVITY-->
 <!--START_SECTION:activity-->
-Recent public activity will appear here after the activity workflow runs.
+1. 💪 Opened PR [#1](https://github.com/TechieGoku2623/AEON-7080/pull/1) in [TechieGoku2623/AEON-7080](https://github.com/TechieGoku2623/AEON-7080)
 <!--END_SECTION:activity-->
 
 <picture>
