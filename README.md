@@ -183,7 +183,7 @@ Four nodes in `sentinel-rag/src/agent.py`. FLAG is written by `output` from a de
 
 ## 04 · Skills
 
-Every name below is imported in a public repo. The next section is the part I actually run.
+Every name below is imported in a public repo. Cloud dashboards and TensorFlow are not listed: they are not a training path in the code.
 
 **Languages**
 
@@ -194,50 +194,76 @@ Every name below is imported in a public repo. The next section is the part I ac
 
 Python · TypeScript · SQL
 
-**Data platforms**
+**Data**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-data-dark.svg">
-  <img src="assets/stack-data-light.svg" alt="Data platforms: DuckDB, pandas, dbt, SQL" height="32">
+  <img src="assets/stack-data-light.svg" alt="DuckDB, pandas, dbt, SQL" height="32">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-store-dark.svg">
+  <img src="assets/stack-store-light.svg" alt="SQLAlchemy, SQLite, Alembic" height="32">
 </picture>
 
 **Models**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=sklearn&theme=dark">
-  <img src="https://skillicons.dev/icons?i=sklearn" alt="scikit-learn" height="40">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=sklearn,pytorch&theme=dark">
+  <img src="https://skillicons.dev/icons?i=sklearn,pytorch" alt="scikit-learn and PyTorch" height="40">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-ml-dark.svg">
-  <img src="assets/stack-ml-light.svg" alt="Models: LightGBM and SHAP" height="32">
+  <img src="assets/stack-ml-light.svg" alt="LightGBM, SHAP, PyTorch, MNE" height="32">
 </picture>
 
-**Agents and retrieval**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-track-dark.svg">
+  <img src="assets/stack-track-light.svg" alt="MLflow, matplotlib, seaborn" height="32">
+</picture>
+
+**Signals**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-signals-dark.svg">
+  <img src="assets/stack-signals-light.svg" alt="NumPy, SciPy, statsmodels, Pydantic" height="32">
+</picture>
+
+**Agents**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-genai-dark.svg">
-  <img src="assets/stack-genai-light.svg" alt="Agents and retrieval: LangGraph, LangChain, Chroma, Groq" height="32">
+  <img src="assets/stack-genai-light.svg" alt="LangGraph, LangChain, Chroma, Groq" height="32">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-providers-dark.svg">
+  <img src="assets/stack-providers-light.svg" alt="Ollama, Bedrock, MiniLM, Hugging Face" height="32">
+</picture>
+
+ClearBed selects the chat provider in code. Groq runs only when the data mode is synthetic. Ollama is local. Bedrock is the path when the data is not synthetic.
 
 **Interfaces**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi,react,nextjs,docker&theme=dark">
-  <img src="https://skillicons.dev/icons?i=fastapi,react,nextjs,docker" alt="Interfaces: FastAPI, React, Next.js, Docker" height="40">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi,react,nextjs,docker,nodejs,vite,tailwind&theme=dark">
+  <img src="https://skillicons.dev/icons?i=fastapi,react,nextjs,docker,nodejs,vite,tailwind" alt="FastAPI, React, Next.js, Docker, Node.js, Vite, Tailwind" height="40">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-bi-dark.svg">
-  <img src="assets/stack-bi-light.svg" alt="Streamlit" height="32">
+  <img src="assets/stack-bi-light.svg" alt="Streamlit, Express, Recharts, Three.js" height="32">
 </picture>
 
-**Signals and contracts**
+**Engineering**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-signals-dark.svg">
-  <img src="assets/stack-signals-light.svg" alt="Signals and contracts: NumPy, SciPy, Pydantic" height="32">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-quality-dark.svg">
+  <img src="assets/stack-quality-light.svg" alt="Typer, Pytest, Ruff, NetworkX" height="32">
 </picture>
+
+SymPy is the closed-form PK path in AEON-7080. WebCrypto is the Hamsa browser stack: P-256, HKDF, AES-GCM.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
