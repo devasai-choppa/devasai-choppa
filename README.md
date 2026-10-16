@@ -256,6 +256,35 @@ ClearBed selects the chat provider in code. Groq runs only when the data mode is
   <img src="assets/stack-bi-light.svg" alt="Streamlit, Express, Recharts, Three.js" height="32">
 </picture>
 
+**Text, files, and runtime**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-nlp-dark.svg">
+  <img src="assets/stack-nlp-light.svg" alt="tiktoken, rapidfuzz, PyPDF, Pillow" height="32">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-runtime-dark.svg">
+  <img src="assets/stack-runtime-light.svg" alt="httpx, PyJWT, Rich, structlog" height="32">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-io-dark.svg">
+  <img src="assets/stack-io-light.svg" alt="joblib, WFDB, Uvicorn" height="32">
+</picture>
+
+**Product UI**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-ui-dark.svg">
+  <img src="assets/stack-ui-light.svg" alt="React Router, Zustand, React Flow, KaTeX" height="32">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-motion-dark.svg">
+  <img src="assets/stack-motion-light.svg" alt="Framer Motion, Vitest" height="32">
+</picture>
+
 **Engineering**
 
 <picture>
@@ -263,7 +292,7 @@ ClearBed selects the chat provider in code. Groq runs only when the data mode is
   <img src="assets/stack-quality-light.svg" alt="Typer, Pytest, Ruff, NetworkX" height="32">
 </picture>
 
-SymPy is the closed-form PK path in AEON-7080. WebCrypto is the Hamsa browser stack: P-256, HKDF, AES-GCM.
+SymPy is the closed-form PK path in AEON-7080. WebCrypto is the Hamsa browser stack: P-256, HKDF, AES-GCM. WFDB is how the motor-imagery repo reads PhysioNet.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
