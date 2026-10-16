@@ -5,7 +5,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/typing-dark.svg">
-  <img src="assets/typing-light.svg" alt="Building clinical AI agents. Turning messy health data into decisions. Data Analyst to AI Engineer." width="760">
+  <img src="assets/typing-light.svg" alt="Agents that retrieve, score, and flag. Warehouses with a leakage gate. Healthcare data, applied AI." width="820">
 </picture>
 
 Data Analyst at NextGenTek USA · Boston  
@@ -14,14 +14,14 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="mailto:pranathesw@gmail.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/email-dark.svg">
-    <img src="assets/email-light.svg" alt="Email pranathesw@gmail.com" height="32">
+    <img src="assets/email-light.svg" alt="Email pranathesw@gmail.com" width="189" height="28">
   </picture>
 </a>
 &nbsp;
 <a href="https://www.linkedin.com/in/devasai-pranatheswar">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/linkedin-dark.svg">
-    <img src="assets/linkedin-light.svg" alt="LinkedIn: linkedin.com/in/devasai-pranatheswar" height="32">
+    <img src="assets/linkedin-light.svg" alt="LinkedIn: linkedin.com/in/devasai-pranatheswar" width="96" height="28">
   </picture>
 </a>
 
@@ -30,7 +30,7 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## What I build
+## 01 · What I build
 
 - Clinical agents that answer from a protocol, score the draft, and flag a person when the source does not support the claim.
 - Genomics and neuro-data tools that keep an evidence trail: ACMG triage, EEG conversion, and neural-privacy audits.
@@ -41,7 +41,7 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Featured work
+## 02 · Featured work
 
 <table>
 <tr>
@@ -165,7 +165,7 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Flagship: Sentinel-RAG
+## 03 · Flagship: Sentinel-RAG
 
 <details>
 <summary>How the clinical protocol guardian decides to answer, retry, or flag</summary>
@@ -195,7 +195,7 @@ The compiled graph in `sentinel-rag/src/agent.py` has four nodes: `retrieve`, `g
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Skills
+## 04 · Skills
 
 Every name below is imported in a public repo. The next section is the part I actually run.
 
@@ -258,7 +258,7 @@ Python · TypeScript · SQL
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Where it goes deep
+## 05 · Where it goes deep
 
 **Retrieval loop.** [Sentinel-RAG](https://github.com/TechieGoku2623/Sentinal_RAG) splits each guideline into a 500-word parent and 100-word children. Chroma stores both. Embeddings are `all-MiniLM-L6-v2`. Search hits the child. Generation reads the parent. The compiled LangGraph is `retrieve → generate → reflect → output`, with Llama 3.1 8B through Groq on the generate step.
 
@@ -281,7 +281,7 @@ Python · TypeScript · SQL
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Research and writing
+## 06 · Research and writing
 
 **Crop Yield Forecasting and Fertilizer Recommendation Using Voting Classifier.** IJRTI, June 2023. Co-authored with B. Chakradhar, D. Sai Veena, and A. Vivek while at Lendi Institute of Engineering and Technology. [PDF](https://www.ijrti.org/papers/IJRTI2306158.pdf)
 
@@ -297,7 +297,7 @@ No public RSS feed is connected yet.
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Activity
+## 07 · Activity
 
 <!--RECENT_ACTIVITY-->
 <!--START_SECTION:activity-->
@@ -329,18 +329,18 @@ No public RSS feed is connected yet.
   <img src="assets/divider-light.svg" alt="" width="100%">
 </picture>
 
-## Open to Data and AI roles in Boston and remote
+## 08 · Open to Data and AI roles in Boston and remote
 
 <a href="mailto:pranathesw@gmail.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/email-dark.svg">
-    <img src="assets/email-light.svg" alt="Email pranathesw@gmail.com" height="32">
+    <img src="assets/email-light.svg" alt="Email pranathesw@gmail.com" width="189" height="28">
   </picture>
 </a>
 &nbsp;
 <a href="https://www.linkedin.com/in/devasai-pranatheswar">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/linkedin-dark.svg">
-    <img src="assets/linkedin-light.svg" alt="LinkedIn: linkedin.com/in/devasai-pranatheswar" height="32">
+    <img src="assets/linkedin-light.svg" alt="LinkedIn: linkedin.com/in/devasai-pranatheswar" width="96" height="28">
   </picture>
 </a>
