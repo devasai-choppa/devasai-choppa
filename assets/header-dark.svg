@@ -21,10 +21,16 @@
   <g clip-path="url(#frame)">
     <rect width="1200" height="320" fill="#061018"/>
     <rect x="0" y="0" width="1200" height="3" fill="#3CBBB4"/>
+    <rect class="motion" y="0" width="90" height="3" fill="#E3B15A" opacity="0.85">
+      <animate attributeName="x" values="-90;1200" dur="3.4s" repeatCount="indefinite"/>
+    </rect>
     <path d="M 30.0 16.0 H 16.0 V 30.0" fill="none" stroke="#3CBBB4" stroke-width="1.5"/><path d="M 1170.0 16.0 H 1184.0 V 30.0" fill="none" stroke="#3CBBB4" stroke-width="1.5"/><path d="M 30.0 304.0 H 16.0 V 290.0" fill="none" stroke="#3CBBB4" stroke-width="1.5"/><path d="M 1170.0 304.0 H 1184.0 V 290.0" fill="none" stroke="#3CBBB4" stroke-width="1.5"/>
     <text x="40" y="44" fill="#3CBBB4" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.6">SYS 01  /  PROFILE</text>
     <text x="1004" y="44" fill="#6E8294" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">BOSTON  ·  CLINICAL</text>
     <rect x="40" y="78" width="56" height="56" fill="#12343A" stroke="#3CBBB4" stroke-width="1.25"/>
+    <circle class="motion" cx="88" cy="86" r="3" fill="#E3B15A">
+      <animate attributeName="opacity" values="0.25;1;0.25" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
     <text x="55.7" y="112" fill="#3CBBB4" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="600">DP</text>
     <text x="112" y="104" fill="#E7EEF4" font-family="Inter, Helvetica, Arial, sans-serif" font-size="32" font-weight="600">Devasai Pranatheswar Choppa</text>
     <text x="112" y="132" fill="#93A4B5" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="500">Data Analyst  ·  NextGenTek USA</text>
@@ -40,9 +46,19 @@
       <mpath href="#ecgtrace" xlink:href="#ecgtrace"/>
     </animateMotion>
   </circle>
+  <rect class="motion" x="760" y="98" width="2" height="100" fill="#3CBBB4" opacity="0.55">
+    <animate attributeName="x" values="760;1130;760" dur="4.8s" repeatCount="indefinite"/>
+  </rect>
   <line x1="752" y1="206" x2="1140" y2="206" stroke="#1C3348" stroke-width="1"/>
   <circle class="motion" cx="768" cy="228" r="4" fill="#3CBBB4"><animate attributeName="opacity" values="0.28;1;0.28" keyTimes="0;0.18;1" dur="3.6s" begin="0.0s" repeatCount="indefinite"/></circle><circle cx="768" cy="228" r="4" fill="none" stroke="#3CBBB4" stroke-width="1.25"/><text x="780" y="232" fill="#3CBBB4" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">01 RETRIEVE</text><circle class="motion" cx="892" cy="228" r="4" fill="#3CBBB4"><animate attributeName="opacity" values="0.28;1;0.28" keyTimes="0;0.18;1" dur="3.6s" begin="1.2s" repeatCount="indefinite"/></circle><circle cx="892" cy="228" r="4" fill="none" stroke="#3CBBB4" stroke-width="1.25"/><text x="904" y="232" fill="#3CBBB4" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">02 SCORE</text><circle class="motion" cx="1016" cy="228" r="4" fill="#E3B15A"><animate attributeName="opacity" values="0.28;1;0.28" keyTimes="0;0.18;1" dur="3.6s" begin="2.4s" repeatCount="indefinite"/></circle><circle cx="1016" cy="228" r="4" fill="none" stroke="#E3B15A" stroke-width="1.25"/><text x="1028" y="232" fill="#E3B15A" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">03 FLAG</text>
 
     <line x1="40" y1="286" x2="1160" y2="286" stroke="#1C3348" stroke-width="1"/><rect x="40" y="280" width="12" height="12" fill="#061018" stroke="#3CBBB4" stroke-width="1.5"/><text x="60" y="291" fill="#93A4B5" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">01 PROTOCOL</text><rect x="320" y="280" width="12" height="12" fill="#061018" stroke="#3CBBB4" stroke-width="1.5"/><text x="340" y="291" fill="#93A4B5" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">02 RETRIEVE</text><rect x="600" y="280" width="12" height="12" fill="#061018" stroke="#3CBBB4" stroke-width="1.5"/><text x="620" y="291" fill="#93A4B5" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">03 SCORE</text><rect x="880" y="280" width="12" height="12" fill="#061018" stroke="#E3B15A" stroke-width="1.5"/><text x="900" y="291" fill="#93A4B5" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace" font-size="12">04 FLAG</text>
+    <line x1="46" y1="272" x2="1148" y2="272" stroke="#1C3348" stroke-width="1"/>
+    <path id="railbus" d="M 46 272 H 1148" fill="none" stroke="none"/>
+    <circle class="motion" r="2.6" fill="#E3B15A" filter="url(#glow)">
+      <animateMotion dur="4.6s" repeatCount="indefinite" calcMode="linear">
+        <mpath href="#railbus" xlink:href="#railbus"/>
+      </animateMotion>
+    </circle>
   </g>
 </svg>
