@@ -263,7 +263,7 @@ No public RSS feed is connected yet.
 
 <!--RECENT_ACTIVITY-->
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#1](https://github.com/devasai-choppa/AEON-7080/pull/1) in [devasai-choppa/AEON-7080](https://github.com/devasai-choppa/AEON-7080)
+1. 💪 Opened PR [#1](https://github.com/devasai-choppa/CareTrace/pull/1) in [devasai-choppa/CareTrace](https://github.com/devasai-choppa/CareTrace)
 <!--END_SECTION:activity-->
 
 ## Open to Data and AI roles in Boston and remote
