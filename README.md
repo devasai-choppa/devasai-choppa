@@ -36,11 +36,11 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <tr>
 <td width="52%" valign="top">
 
-**Agents.** LangGraph `retrieve → generate → reflect → output`. A Python score plus a temperature-0 verdict. FLAG is a state.
+**Guideline answers.** Drafts a response from a clinical guideline, and flags a person when the source does not support it.
 
-**Warehouse.** DuckDB `raw` → dbt marts → LightGBM. The build fails if a label leaked. A referral waits on a person.
+**Discharge risk.** Scores whether a hospital stay will run long, using only what is known at admission, then waits for a person before a referral counts as sent.
 
-**Evidence.** One ACMG node per code. EEG `resample_poly` with an append-only chain. A policy field needs a character span.
+**Bills and evidence.** Compares a bill with the hospital's published rate, walks a genetic variant through evidence rules, and checks a neural-data policy for a real citation.
 
 </td>
 <td width="48%" valign="top">
@@ -68,13 +68,11 @@ MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / 
 <a href="https://github.com/devasai-choppa/Sentinal_RAG">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/sentinel-rag-dark.svg">
-    <img src="assets/project-cards/sentinel-rag-light.svg" alt="Sentinel-RAG. Child retrieve. Parent draft. Reflect or FLAG. LangGraph, Chroma, FastAPI.">
+    <img src="assets/project-cards/sentinel-rag-light.svg" alt="Sentinel-RAG. Answers from a guideline, or flags a person. LangGraph, Chroma, FastAPI.">
   </picture>
 </a>
 
-`retrieve → generate → reflect → output`
-
-Child hit in Chroma, parent context to Llama 3.1 8B. Empty context, an off-corpus query, or `CONTRADICTED` is FLAG. The in-repo corpus is a fictional diabetes guideline. Not a device.
+Answers a question from a clinical guideline, then checks whether the draft is actually supported. If the guideline does not cover the question, or the draft contradicts it, the system flags a person instead of guessing. The sample guideline in the repo is fictional. This is not a medical device.
 
 <a href="https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/docs/demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/docs/ARCHITECTURE.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Sentinal_RAG/blob/main/sentinel-rag/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
@@ -84,13 +82,11 @@ Child hit in Chroma, parent context to Llama 3.1 8B. Empty context, an off-corpu
 <a href="https://github.com/devasai-choppa/Clear-Bed">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/clearbed-dark.svg">
-    <img src="assets/project-cards/clearbed-light.svg" alt="ClearBed. Stay mart, leakage gate, then a human interrupt. dbt, DuckDB, LightGBM.">
+    <img src="assets/project-cards/clearbed-light.svg" alt="ClearBed. Scores a delayed discharge, then waits. dbt, DuckDB, LightGBM.">
   </picture>
 </a>
 
-`raw → dbt marts → LightGBM → interrupt`
-
-Stuck-risk, barrier type, and avoidable days. The quality report fails on a leaked label, high nulls, or too few stays. `sent` is recorded only after approval. Nothing is transmitted. Stays are synthetic. The CMS Care Compare file is the national nursing-home catalog.
+Estimates whether a hospital stay will run long, what is blocking discharge, and how many days might have been avoided. It trains only on what is known at admission, and the build stops if a later outcome leaked into those features. A nursing-home suggestion waits until a person approves it. The patients are synthetic. The nursing-home list is the real CMS Care Compare file.
 
 <a href="https://github.com/devasai-choppa/Clear-Bed/blob/main/docs/walkthrough.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Clear-Bed#architecture"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Clear-Bed"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
@@ -102,13 +98,11 @@ Stuck-risk, barrier type, and avoidable days. The quality report fails on a leak
 <a href="https://github.com/devasai-choppa/acmg-triage">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/acmg-triage-dark.svg">
-    <img src="assets/project-cards/acmg-triage-light.svg" alt="acmg-triage. One ACMG node per code. Cache only. Refusal path. Python, FastAPI, DuckDB.">
+    <img src="assets/project-cards/acmg-triage-light.svg" alt="acmg-triage. Walks variant rules, and can refuse. Python, FastAPI, DuckDB.">
   </picture>
 </a>
 
-`rules → VCEP → cache → refuse`
-
-Pydantic `GraphState`, one node per ACMG/AMP code, literature from a committed cache only. No live LLM. Conflict or an uncovered variant is refused. Concordance with the rules-only baseline is 0.670 on 100 designed probes.
+Walks a genetic variant through the ACMG/AMP evidence rules, one rule at a time. Literature comes from a saved cache, not a live model. If the rules conflict, or the variant is outside the catalog, it refuses to make a call. On 100 designed test cases it matches a rules-only baseline 67 percent of the time.
 
 <a href="https://github.com/devasai-choppa/acmg-triage/blob/main/demo/out/acmg-triage-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/acmg-triage/blob/main/src/acmg_triage/graph.py"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/acmg-triage"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
@@ -118,13 +112,11 @@ Pydantic `GraphState`, one node per ACMG/AMP code, literature from a committed c
 <a href="https://github.com/devasai-choppa/neuroprivacy">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/neuroprivacy-dark.svg">
-    <img src="assets/project-cards/neuroprivacy-light.svg" alt="neuroprivacy. Span offsets scored against two state statutes. Python, Pydantic, rules.">
+    <img src="assets/project-cards/neuroprivacy-light.svg" alt="neuroprivacy. Checks a neural-data policy for a citation. Python, Pydantic, rules.">
   </picture>
 </a>
 
-`span → offset → rule → statute`
-
-Deterministic extract. A true field with no character offset is a citation gap. Rules cover Colorado HB24-1058 and California SB 1223. Field F1 is 1.000 on 20 hand labels. The live hold-out is open. Not a legal opinion.
+Reads a company's neural-data policy and checks it against Colorado and California neural-privacy laws. A claim counts only when it points at the exact words in the policy. On 20 hand-labeled examples the field score is perfect, and a public hold-out is still open. This is not legal advice.
 
 <a href="https://github.com/devasai-choppa/neuroprivacy/blob/main/demo/out/neuroprivacy-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/neuroprivacy/blob/main/src/neuroprivacy/scoring.py"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/neuroprivacy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
@@ -136,31 +128,27 @@ Deterministic extract. A true field with no character offset is a citation gap. 
 <a href="https://github.com/devasai-choppa/eeg-harmonize">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/eeg-harmonize-dark.svg">
-    <img src="assets/project-cards/eeg-harmonize-light.svg" alt="eeg-harmonize. EDF, unit check, montage, resample, provenance. NumPy, SciPy, EDF.">
+    <img src="assets/project-cards/eeg-harmonize-light.svg" alt="eeg-harmonize. Converts EEG into one traced format. NumPy, SciPy, EDF.">
   </picture>
 </a>
 
-`read → units → montage → resample_poly`
-
-A bad unit scale is rejected. Each step is appended to a DuckDB provenance chain. The clips are designed. TUH transfer was not run, and TUH is not in the repository.
+Turns EEG recordings into one common format. It rejects a bad unit scale, keeps the standard channels, resamples the signal, and records each step so the conversion can be traced. The clips in the repo were made for this demo. A test on the TUH corpus was not run, and that corpus is not included.
 
 <a href="https://github.com/devasai-choppa/eeg-harmonize/blob/main/demo/out/eeg-harmonize-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/eeg-harmonize/blob/main/src/eeg_harmonize/convert.py"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/eeg-harmonize"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/devasai-choppa/Hamsa">
+<a href="https://github.com/devasai-choppa/CareTrace">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/hamsa-dark.svg">
-    <img src="assets/project-cards/hamsa-light.svg" alt="Hamsa. P-256, AES-GCM, catalog price, UPI intent. FastAPI, React, WebCrypto.">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/caretrace-dark.svg">
+    <img src="assets/project-cards/caretrace-light.svg" alt="CareTrace. Compares a bill to the published rate. LangGraph, DuckDB, dbt.">
   </picture>
 </a>
 
-`P-256 → HKDF → AES-GCM → verify_line`
+Tells you what a hospital published for a procedure, whether a provider looks in network, whether prior authorization is required and on which page, and whether a bill matches that rate. A dollar the tools never returned is removed from the answer. Estimates are not quotes, and appeal letters are drafts. The scored demo uses five sample hospital files and synthetic bills. Not legal or medical advice.
 
-Non-exportable device key. Per-message content key, with conversation, message, and sender bound as additional data. Unknown SKU, bad quantity, or missing stock is rejected. Price is copied from `price_paise`. UPI is an intent. The app does not hold the money.
-
-<a href="https://github.com/devasai-choppa/Hamsa/blob/main/demo/hamsa-demo.gif"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Hamsa/blob/main/docs/architecture.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/Hamsa"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
+<a href="https://github.com/devasai-choppa/CareTrace/blob/main/docs/DEMO_SCRIPT.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-demo-dark.svg"><img src="assets/btn-demo-light.svg" alt="Demo" width="95" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/CareTrace/blob/main/docs/ARCHITECTURE.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-arch-dark.svg"><img src="assets/btn-arch-light.svg" alt="Architecture" width="162" height="40"></picture></a>&nbsp;<a href="https://github.com/devasai-choppa/CareTrace"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-readme-dark.svg"><img src="assets/btn-readme-light.svg" alt="README" width="111" height="40"></picture></a>
 
 </td>
 </tr>
@@ -191,23 +179,21 @@ Non-exportable device key. Per-message content key, with conversation, message, 
 
 ## Where it goes deep
 
-The cards above are the map. The bounds below are the systems.
+The six cards are the short version. This is the same work, with the limits written out.
 
-**Retrieval loop.** [Sentinel-RAG](https://github.com/devasai-choppa/Sentinal_RAG) splits each guideline into a 500-word parent and 100-word children. Chroma stores both. Embeddings are `all-MiniLM-L6-v2`. Search hits the child. Generation reads the parent. The compiled LangGraph is `retrieve → generate → reflect → output`, with Llama 3.1 8B through Groq on the generate step. Live generation needs `GROQ_API_KEY`.
+**[Sentinel-RAG](https://github.com/devasai-choppa/Sentinal_RAG)** answers a question from a clinical guideline. Search uses a 100-word child passage. The draft is written from the surrounding 500-word section, with Llama 3.1 8B through Groq. Embeddings are `all-MiniLM-L6-v2`. The steps are retrieve, generate, reflect, and output. Reflect scores the draft and can ask a second model, at temperature 0, whether the draft is supported, partly supported, or contradicted. No context, a question the guideline does not cover, or a contradicted draft becomes FLAG. A supported draft, or one already grounded and at 0.75, is returned. Otherwise 0.85 returns immediately, and 0.75 can search again up to twice. Bedside mode can skip the second model call when the first score is already high. FLAG is recorded by the output step from a decision inside reflect. It is not an extra step. A live draft needs `GROQ_API_KEY`. The guideline in the repo is fictional. Not a medical device.
 
-`reflect` blends a Python score (context coverage, uncertainty, specificity, contradiction) with a second model call at temperature 0. That call returns `SUPPORTED`, `PARTIALLY_SUPPORTED`, or `CONTRADICTED`. Empty context, a query that misses the corpus, or `CONTRADICTED` is FLAG. A `SUPPORTED` verdict, or a corpus-grounded draft already at or above 0.75, is returned. Otherwise a score at or above 0.85 is returned, and a score at or above 0.75 retries retrieval up to 2 times. Bedside mode can skip the second call when the heuristic is already high. An old source year lowers the score. FLAG is written by `output` from a decision inside `reflect`. It is not a fifth node. The bundled corpus is a fictional diabetes guideline. Not a medical device.
+**[ClearBed](https://github.com/devasai-choppa/Clear-Bed)** estimates a delayed discharge from synthetic hospital stays. Synthea lands in DuckDB. dbt builds the admission snapshot and the stay labels. LightGBM predicts whether the stay gets stuck, what the barrier is, and how many days might have been avoided. Categories are one-hot encoded, and SHAP is read for the positive class. The build fails if a label leaked onto the admission snapshot, if too many features are empty, or if there are too few stays. A nursing-home match uses the real CMS Care Compare file and waits until a person approves it. Approval records that it was sent. It does not transmit the referral.
 
-**Warehouse and discharge model.** [ClearBed](https://github.com/devasai-choppa/Clear-Bed) loads Synthea into DuckDB `raw`. dbt builds `marts.feat_admission_snapshot` and `marts.fct_stay_labels`. LightGBM fits stuck-risk, barrier type, and avoidable days from that join. Categoricals are one-hot encoded. SHAP is read for the positive class. A quality report fails the build if a label column leaked onto the admission snapshot, if feature nulls are too high, or if the stay count is too small. The placement graph matches the national CMS Care Compare nursing-home file and interrupts until a person approves. Approve records `sent`. It does not transmit. Patients are synthetic.
+**[acmg-triage](https://github.com/devasai-choppa/acmg-triage)** turns an ACMG/AMP variant review into a typed trail. Each evidence code is its own step, then a VCEP overlay, then literature that is read only from a saved cache. The runner is hand-rolled, and there is no live language model on this path. Conflicting calls, and variants outside the catalog, are refused. On 100 designed probes it agrees with a rules-only baseline 0.670 of the time.
 
-**Evidence graph.** [acmg-triage](https://github.com/devasai-choppa/acmg-triage) keeps `GraphState` as a Pydantic model. Each ACMG/AMP rules code is its own node, then a VCEP overlay, then literature nodes that read only a committed cache. The runner is hand-rolled. There is no live LLM on this graph. Conflicting calls and variants outside the catalog are refused. Concordance with the rules-only baseline is 0.670 on 100 designed probes.
+**[neuroprivacy](https://github.com/devasai-choppa/neuroprivacy)** checks a consumer neural-data policy against Colorado HB24-1058 and California SB 1223. Extraction is deterministic. A field marked true without a character offset is a citation gap. Mean field F1 is 1.000 on 20 hand-labeled samples. The live public hold-out is still open. The output is not a legal opinion.
 
-**Policy spans.** [neuroprivacy](https://github.com/devasai-choppa/neuroprivacy) extracts with deterministic rules. A field marked true without a character offset is a citation gap. The scorer covers Colorado HB24-1058 and California SB 1223. Mean field F1 is 1.000 on 20 hand-labeled samples. The live public-policy hold-out is still open. The output is not a legal opinion.
+**[eeg-harmonize](https://github.com/devasai-choppa/eeg-harmonize)** reads an EDF file, rejects a bad unit scale, drops channels that are not in the standard set, resamples with `scipy.signal.resample_poly`, and appends every step to a provenance chain. The clips in the repo were designed for the demo. A TUH transfer was not run, and TUH is not in the repository.
 
-**EEG conversion.** [eeg-harmonize](https://github.com/devasai-choppa/eeg-harmonize) reads EDF, rejects a bad unit scale, drops non-canonical channels, resamples with `scipy.signal.resample_poly`, and appends each step to a provenance chain. The clips in the repo are designed. The TUH transfer was not run, and TUH is not in the repository.
+**[CareTrace](https://github.com/devasai-choppa/CareTrace)** closes the gap between a hospital's published price and the bill that arrives later. Machine-readable price files become Parquet. dbt and DuckDB build the mart the agent reads. The LangGraph steps are router, clarify, execute, synthesize, and verifier. The verifier deletes a sentence whose number is not in the tool result. A published dollar keeps its source file, row hash, and ingest time. A guessed interval is a separate object and is never shown as the hospital's price. Prior authorization cites the policy page, or comes back unknown when the code is not in the policy. An uploaded explanation of benefits can be audited, and the appeal is a draft. The default model is a mock. On the sample files, price exact-match is 1.000 for 50 questions. Interval coverage of 0.957 was measured on a simulated price process, not on held-out hospital files. Five sample hospitals, three payers, one imaging policy, and synthetic bills. Not legal or medical advice.
 
-**Encrypted cart.** [Hamsa](https://github.com/devasai-choppa/Hamsa) gives each browser device a non-exportable P-256 ECDH key. The shared secret goes through HKDF into an AES-256-GCM key. Each message has its own content key, with the conversation, message, and sender ids bound as additional data. Cart changes pass `verify_line`, which rejects an unknown SKU, a bad quantity, or stock the catalog does not have. The price is copied from `price_paise` on that catalog row. UPI is an intent to the merchant. The app does not hold the money.
-
-**Classical ML, already measured.** [EEG motor imagery](https://github.com/devasai-choppa/EEG-Motor-Imagery-Classifier) trains on PhysioNet EEGMMIDB with MNE and PyTorch. The band is about 8–30 Hz. CSP + SVM is 47.7% on the same person. EEGNet is 32.2% leave-one-subject-out. Those are the numbers published in that README.
+**[EEG motor imagery](https://github.com/devasai-choppa/EEG-Motor-Imagery-Classifier)** trains on PhysioNet EEGMMIDB with MNE and PyTorch, in a band of about 8–30 Hz. CSP plus SVM is 47.7 percent for the same person. EEGNet is 32.2 percent leave-one-subject-out. Those figures are the ones published in that README.
 
 **Tools in the featured repos.** Python, SQL, DuckDB, pandas, dbt, LightGBM, LangGraph, Chroma, FastAPI, React, Next.js, Docker. Other imported libraries live in the public code and are not drawn on the orbit.
 
