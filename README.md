@@ -195,11 +195,11 @@ The six cards are the short version. This is the same work, with the limits writ
 
 **[EEG motor imagery](https://github.com/devasai-choppa/EEG-Motor-Imagery-Classifier)** trains on PhysioNet EEGMMIDB with MNE and PyTorch, in a band of about 8–30 Hz. CSP plus SVM is 47.7 percent for the same person. EEGNet is 32.2 percent leave-one-subject-out. Those figures are the ones published in that README.
 
-**Tools in the featured repos.** Python, SQL, DuckDB, pandas, dbt, LightGBM, LangGraph, Chroma, FastAPI, React, Next.js, Docker. Other imported libraries live in the public code and are not drawn on the orbit.
+**Tools in the featured repos.** Python, SQL, DuckDB, pandas, dbt, LightGBM, LangGraph, Chroma, FastAPI, React, Next.js, Docker. The outer ring is methods that code runs: retrieval-augmented generation, embeddings, SHAP, and conformal prediction. Other imported libraries live in the public code and are not drawn on the orbit.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-orbit-dark.svg">
-  <img src="assets/stack-orbit-light.svg" alt="Twelve tools from the featured repos orbit a DEVA mark: Python, SQL, DuckDB, pandas, dbt, LightGBM, LangGraph, Chroma, FastAPI, React, Next.js, Docker." width="600">
+  <img src="assets/stack-orbit-light.svg" alt="Tools from the featured repos orbit a DEVA mark: Python, SQL, DuckDB, pandas, dbt, LightGBM, LangGraph, Chroma, FastAPI, React, Next.js, Docker. Outer ring: RAG, embeddings, SHAP, and conformal prediction." width="600">
 </picture>
 
 <picture>
