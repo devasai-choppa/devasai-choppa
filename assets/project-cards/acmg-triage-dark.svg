@@ -31,19 +31,19 @@
     }
     </style>
   
-  <rect width="440" height="240" fill="#0D1117"/>
+  <rect width="440" height="240" fill="#0C0B0A"/>
   <clipPath id="frame"><rect x="8" y="8" width="424" height="224" rx="8"/></clipPath>
-  <rect x="8" y="8" width="424" height="224" rx="8" fill="#0D1117" stroke="#1C2E3A"/>
-  <rect class="trace" x="8" y="8" width="424" height="224" rx="8" fill="none" stroke="#00F5D4" stroke-width="1.5"/>
+  <rect x="8" y="8" width="424" height="224" rx="8" fill="#121110" stroke="#2E2A26"/>
+  <rect class="trace" x="8" y="8" width="424" height="224" rx="8" fill="none" stroke="#E4C58A" stroke-width="1.5"/>
   <g clip-path="url(#frame)">
-    <rect class="shim" x="0" y="8" width="70" height="224" fill="#00F5D4" opacity="0.08"/>
+    <rect class="shim" x="0" y="8" width="70" height="224" fill="#E4C58A" opacity="0.08"/>
   </g>
-  <text x="20" y="44" fill="#5C6E7E" font-family="Hud, ui-monospace, monospace" font-size="11" letter-spacing="1.4">03</text>
-  <circle class="dot" cx="332" cy="40" r="3.5" fill="#00F5D4"/>
-  <text x="342" y="44" fill="#00F5D4" font-family="Hud, ui-monospace, monospace" font-size="11">OPEN</text>
-  <text x="20" y="96" fill="#E6EDF3" font-family="Hud, ui-monospace, monospace" font-size="22">acmg-triage</text>
-  <text x="20" y="132" fill="#8B9BAB" font-family="Hud, ui-monospace, monospace" font-size="13">Walks variant rules, and can refuse.</text>
+  <text x="20" y="44" fill="#7A7066" font-family="Hud, ui-monospace, monospace" font-size="11" letter-spacing="1.4">03</text>
+  <circle class="dot" cx="332" cy="40" r="3.5" fill="#E4C58A"/>
+  <text x="342" y="44" fill="#E4C58A" font-family="Hud, ui-monospace, monospace" font-size="11">OPEN</text>
+  <text x="20" y="96" fill="#F7F1E6" font-family="Hud, ui-monospace, monospace" font-size="22">acmg-triage</text>
+  <text x="20" y="132" fill="#B7AA9A" font-family="Hud, ui-monospace, monospace" font-size="13">Walks variant rules, and can refuse.</text>
   
-  <rect x="20.0" y="188.0" width="59.6" height="22" rx="2" fill="#102028" stroke="#1C2E3A"/><text x="30.0" y="203.0" fill="#D5FFF8" font-family="Hud, ui-monospace, monospace" font-size="11">Python</text><rect x="87.6" y="188.0" width="66.2" height="22" rx="2" fill="#102028" stroke="#1C2E3A"/><text x="97.6" y="203.0" fill="#D5FFF8" font-family="Hud, ui-monospace, monospace" font-size="11">FastAPI</text><rect x="161.7" y="188.0" width="59.6" height="22" rx="2" fill="#102028" stroke="#1C2E3A"/><text x="171.7" y="203.0" fill="#D5FFF8" font-family="Hud, ui-monospace, monospace" font-size="11">DuckDB</text>
+  <rect x="20.0" y="188.0" width="59.6" height="22" rx="2" fill="#181614" stroke="#2E2A26"/><text x="30.0" y="203.0" fill="#F3E6D0" font-family="Hud, ui-monospace, monospace" font-size="11">Python</text><rect x="87.6" y="188.0" width="66.2" height="22" rx="2" fill="#181614" stroke="#2E2A26"/><text x="97.6" y="203.0" fill="#F3E6D0" font-family="Hud, ui-monospace, monospace" font-size="11">FastAPI</text><rect x="161.7" y="188.0" width="59.6" height="22" rx="2" fill="#181614" stroke="#2E2A26"/><text x="171.7" y="203.0" fill="#F3E6D0" font-family="Hud, ui-monospace, monospace" font-size="11">DuckDB</text>
 
 </svg>

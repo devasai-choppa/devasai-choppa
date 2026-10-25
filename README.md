@@ -3,7 +3,7 @@
   <img src="assets/hero-hud-light.svg" alt="Devasai Pranatheswar Choppa. Data Analyst and Engineer at NextGenTek USA, Boston. Healthcare data, SQL, Python, ETL, and RAG. Open to work in the United States." width="100%">
 </picture>
 
-Data Analyst · NextGenTek USA · Boston, Massachusetts  
+Data Analyst and Engineer · NextGenTek USA · Boston, Massachusetts  
 Healthcare data, SQL, Python, ETL · AI, LLMs, and RAG  
 MS Analytics, Northeastern · B.Tech Computer Science, Lendi / JNTU
 
@@ -280,18 +280,18 @@ No public RSS feed is connected yet.
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=devasai-choppa&show_icons=true&hide_border=true&title_color=00F5D4&text_color=C9D1D9&icon_color=F72585&bg_color=0D1117">
-  <img src="https://github-readme-stats.vercel.app/api?username=devasai-choppa&show_icons=true&hide_border=true&title_color=0C7C78&text_color=0B1F33&icon_color=C2185B&bg_color=F4F7F8" alt="GitHub stats for devasai-choppa" height="165">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=devasai-choppa&show_icons=true&hide_border=true&title_color=E4C58A&text_color=F7F1E6&icon_color=E07A5F&bg_color=0C0B0A">
+  <img src="https://github-readme-stats.vercel.app/api?username=devasai-choppa&show_icons=true&hide_border=true&title_color=8D6A32&text_color=1A1612&icon_color=9A4636&bg_color=F7F3EC" alt="GitHub stats for devasai-choppa" height="165">
 </picture>
 &nbsp;
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=devasai-choppa&layout=compact&hide_border=true&langs_count=6&title_color=00F5D4&text_color=C9D1D9&icon_color=F72585&bg_color=0D1117">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devasai-choppa&layout=compact&hide_border=true&langs_count=6&title_color=0C7C78&text_color=0B1F33&icon_color=C2185B&bg_color=F4F7F8" alt="Most used languages for devasai-choppa" height="165">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=devasai-choppa&layout=compact&hide_border=true&langs_count=6&title_color=E4C58A&text_color=F7F1E6&icon_color=E07A5F&bg_color=0C0B0A">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devasai-choppa&layout=compact&hide_border=true&langs_count=6&title_color=8D6A32&text_color=1A1612&icon_color=9A4636&bg_color=F7F3EC" alt="Most used languages for devasai-choppa" height="165">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=devasai-choppa&hide_border=true&background=0D1117&stroke=0D1117&ring=00F5D4&fire=F72585&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=8B9BAB&sideLabels=8B9BAB&dates=5C6E7E">
-  <img src="https://streak-stats.demolab.com?user=devasai-choppa&hide_border=true&background=F4F7F8&stroke=F4F7F8&ring=0C7C78&fire=C2185B&currStreakNum=0B1F33&sideNums=0B1F33&currStreakLabel=3E5568&sideLabels=3E5568&dates=6C8194" alt="GitHub contribution streak for devasai-choppa" height="150">
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=devasai-choppa&hide_border=true&background=0C0B0A&stroke=0C0B0A&ring=E4C58A&fire=E07A5F&currStreakNum=F7F1E6&sideNums=F7F1E6&currStreakLabel=B7AA9A&sideLabels=B7AA9A&dates=7A7066">
+  <img src="https://streak-stats.demolab.com?user=devasai-choppa&hide_border=true&background=F7F3EC&stroke=F7F3EC&ring=8D6A32&fire=9A4636&currStreakNum=1A1612&sideNums=1A1612&currStreakLabel=5E564C&sideLabels=5E564C&dates=8C8376" alt="GitHub contribution streak for devasai-choppa" height="150">
 </picture>
 
 <picture>

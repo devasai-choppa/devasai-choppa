@@ -34,20 +34,20 @@
     }
     </style>
   
-  <rect width="111" height="40" rx="4" fill="#102028"/>
-  <rect class="trace" x="1" y="1" width="109" height="38" rx="3" fill="none" stroke="#00F5D4" stroke-width="1.25"/>
-  <rect width="3" height="40" fill="#00F5D4"/>
+  <rect width="111" height="40" rx="4" fill="#181614"/>
+  <rect class="trace" x="1" y="1" width="109" height="38" rx="3" fill="none" stroke="#E4C58A" stroke-width="1.25"/>
+  <rect width="3" height="40" fill="#E4C58A"/>
   <clipPath id="face"><rect width="111" height="40" rx="4"/></clipPath>
   <g clip-path="url(#face)">
-    <rect class="shim" x="0" y="0" width="28" height="40" fill="#00F5D4" opacity="0.14"/>
+    <rect class="shim" x="0" y="0" width="28" height="40" fill="#E4C58A" opacity="0.14"/>
   </g>
   
     <clipPath id="page"><rect x="15" y="12" width="14" height="16" rx="1"/></clipPath>
-    <rect x="15" y="12" width="14" height="16" rx="1" fill="none" stroke="#00F5D4" stroke-width="1.2"/>
-    <path d="M 23 12 V 17 H 29" fill="none" stroke="#00F5D4" stroke-width="1.1"/>
+    <rect x="15" y="12" width="14" height="16" rx="1" fill="none" stroke="#E4C58A" stroke-width="1.2"/>
+    <path d="M 23 12 V 17 H 29" fill="none" stroke="#E4C58A" stroke-width="1.1"/>
     <g clip-path="url(#page)">
-      <rect class="scanline" x="16" y="14" width="12" height="2" fill="#00F5D4" opacity="0.45"/>
+      <rect class="scanline" x="16" y="14" width="12" height="2" fill="#E4C58A" opacity="0.45"/>
     </g>
-  <text x="40" y="25" fill="#00F5D4" font-family="Hud, ui-monospace, monospace" font-size="12" letter-spacing="1.15">README</text>
+  <text x="40" y="25" fill="#E4C58A" font-family="Hud, ui-monospace, monospace" font-size="12" letter-spacing="1.15">README</text>
 
 </svg>

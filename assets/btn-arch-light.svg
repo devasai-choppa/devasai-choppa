@@ -34,23 +34,23 @@
     }
     </style>
   
-  <rect width="162" height="40" rx="4" fill="#E5F4F3"/>
-  <rect class="trace" x="1" y="1" width="160" height="38" rx="3" fill="none" stroke="#C2185B" stroke-width="1.25"/>
-  <rect width="3" height="40" fill="#C2185B"/>
+  <rect width="162" height="40" rx="4" fill="#F3EDE4"/>
+  <rect class="trace" x="1" y="1" width="160" height="38" rx="3" fill="none" stroke="#9A4636" stroke-width="1.25"/>
+  <rect width="3" height="40" fill="#9A4636"/>
   <clipPath id="face"><rect width="162" height="40" rx="4"/></clipPath>
   <g clip-path="url(#face)">
-    <rect class="shim" x="0" y="0" width="28" height="40" fill="#C2185B" opacity="0.14"/>
+    <rect class="shim" x="0" y="0" width="28" height="40" fill="#9A4636" opacity="0.14"/>
   </g>
   
-    <path id="wire" d="M 14 27 L 22 13 L 30 27" fill="none" stroke="#C2185B" stroke-width="1.2"/>
-    <circle cx="14" cy="27" r="2.3" fill="#C2185B"/>
-    <circle cx="22" cy="13" r="2.3" fill="#C2185B"/>
-    <circle cx="30" cy="27" r="2.3" fill="#C2185B"/>
-    <circle class="motion" r="2.1" fill="#0C7C78">
+    <path id="wire" d="M 14 27 L 22 13 L 30 27" fill="none" stroke="#9A4636" stroke-width="1.2"/>
+    <circle cx="14" cy="27" r="2.3" fill="#9A4636"/>
+    <circle cx="22" cy="13" r="2.3" fill="#9A4636"/>
+    <circle cx="30" cy="27" r="2.3" fill="#9A4636"/>
+    <circle class="motion" r="2.1" fill="#8D6A32">
       <animateMotion dur="2.4s" repeatCount="indefinite" calcMode="linear">
         <mpath href="#wire" xlink:href="#wire"/>
       </animateMotion>
     </circle>
-  <text x="40" y="25" fill="#C2185B" font-family="Hud, ui-monospace, monospace" font-size="12" letter-spacing="1.15">ARCHITECTURE</text>
+  <text x="40" y="25" fill="#9A4636" font-family="Hud, ui-monospace, monospace" font-size="12" letter-spacing="1.15">ARCHITECTURE</text>
 
 </svg>
