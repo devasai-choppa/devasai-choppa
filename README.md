@@ -35,7 +35,7 @@ I turn regulated data into pipelines, reports, and AI tools people can check. Op
 
 ## Engineering
 
-Raw files land in DuckDB. dbt builds the mart. A build can split into queries and checks, then join again. A window can fold many records into one row. On ClearBed, a later outcome is kept off the admission snapshot. Leakage, too many empty fields, or too few stays stops the build.
+Raw files land in DuckDB. dbt builds the mart. A build can split into queries and checks, then join again. A window can fold many records into one row. Sentinel-RAG walks retrieve, generate, reflect, and output. Changes can scroll into DuckDB. On ClearBed, a later outcome is kept off the admission snapshot. Leakage, too many empty fields, or too few stays stops the build.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
@@ -55,6 +55,16 @@ Raw files land in DuckDB. dbt builds the mart. A build can split into queries an
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/window-dark.svg">
   <img src="assets/window-light.svg" alt="Streaming window. Records slide through a frame and leave as one row. Diagram, not a measured stream." width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/loop-dark.svg">
+  <img src="assets/loop-light.svg" alt="Reflect loop in teal and magenta. Retrieve, generate, reflect, and output. The score stays inside reflect. Diagram, not a live model call." width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/log-dark.svg">
+  <img src="assets/log-light.svg" alt="Change log in teal and magenta. Rows scroll into a DuckDB replica. Diagram, not a measured sync." width="100%">
 </picture>
 
 <picture>
