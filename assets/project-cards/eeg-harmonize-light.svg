@@ -31,19 +31,19 @@
     }
     </style>
   
-  <rect width="440" height="240" fill="#F7F3EC"/>
+  <rect width="440" height="240" fill="#F4F7F8"/>
   <clipPath id="frame"><rect x="8" y="8" width="424" height="224" rx="8"/></clipPath>
-  <rect x="8" y="8" width="424" height="224" rx="8" fill="#FFFCF7" stroke="#E4DCD0"/>
-  <rect class="trace" x="8" y="8" width="424" height="224" rx="8" fill="none" stroke="#8D6A32" stroke-width="1.5"/>
+  <rect x="8" y="8" width="424" height="224" rx="8" fill="#FFFFFF" stroke="#D3DEE5"/>
+  <rect class="trace" x="8" y="8" width="424" height="224" rx="8" fill="none" stroke="#0C7C78" stroke-width="1.5"/>
   <g clip-path="url(#frame)">
-    <rect class="shim" x="0" y="8" width="70" height="224" fill="#8D6A32" opacity="0.08"/>
+    <rect class="shim" x="0" y="8" width="70" height="224" fill="#0C7C78" opacity="0.08"/>
   </g>
-  <text x="20" y="44" fill="#8C8376" font-family="Hud, ui-monospace, monospace" font-size="11" letter-spacing="1.4">05</text>
-  <circle class="dot" cx="332" cy="40" r="3.5" fill="#8D6A32"/>
-  <text x="342" y="44" fill="#8D6A32" font-family="Hud, ui-monospace, monospace" font-size="11">OPEN</text>
-  <text x="20" y="96" fill="#1A1612" font-family="Hud, ui-monospace, monospace" font-size="22">eeg-harmonize</text>
-  <text x="20" y="132" fill="#5E564C" font-family="Hud, ui-monospace, monospace" font-size="13">Converts EEG into one traced format.</text>
+  <text x="20" y="44" fill="#6C8194" font-family="Hud, ui-monospace, monospace" font-size="11" letter-spacing="1.4">05</text>
+  <circle class="dot" cx="332" cy="40" r="3.5" fill="#0C7C78"/>
+  <text x="342" y="44" fill="#0C7C78" font-family="Hud, ui-monospace, monospace" font-size="11">OPEN</text>
+  <text x="20" y="96" fill="#0B1F33" font-family="Hud, ui-monospace, monospace" font-size="22">eeg-harmonize</text>
+  <text x="20" y="132" fill="#3E5568" font-family="Hud, ui-monospace, monospace" font-size="13">Converts EEG into one traced format.</text>
   
-  <rect x="20.0" y="188.0" width="53.0" height="22" rx="2" fill="#F3EDE4" stroke="#E4DCD0"/><text x="30.0" y="203.0" fill="#3F3424" font-family="Hud, ui-monospace, monospace" font-size="11">NumPy</text><rect x="81.0" y="188.0" width="53.0" height="22" rx="2" fill="#F3EDE4" stroke="#E4DCD0"/><text x="91.0" y="203.0" fill="#3F3424" font-family="Hud, ui-monospace, monospace" font-size="11">SciPy</text><rect x="141.9" y="188.0" width="39.8" height="22" rx="2" fill="#F3EDE4" stroke="#E4DCD0"/><text x="151.9" y="203.0" fill="#3F3424" font-family="Hud, ui-monospace, monospace" font-size="11">EDF</text>
+  <rect x="20.0" y="188.0" width="53.0" height="22" rx="2" fill="#E5F4F3" stroke="#D3DEE5"/><text x="30.0" y="203.0" fill="#0C4F4C" font-family="Hud, ui-monospace, monospace" font-size="11">NumPy</text><rect x="81.0" y="188.0" width="53.0" height="22" rx="2" fill="#E5F4F3" stroke="#D3DEE5"/><text x="91.0" y="203.0" fill="#0C4F4C" font-family="Hud, ui-monospace, monospace" font-size="11">SciPy</text><rect x="141.9" y="188.0" width="39.8" height="22" rx="2" fill="#E5F4F3" stroke="#D3DEE5"/><text x="151.9" y="203.0" fill="#0C4F4C" font-family="Hud, ui-monospace, monospace" font-size="11">EDF</text>
 
 </svg>

@@ -18,8 +18,8 @@
     }
     </style>
   
-  <rect width="189" height="28" fill="#181614" stroke="#2E2A26"/>
-  <rect x="8" y="11" width="6" height="6" fill="#E4C58A"/>
-  <text x="20" y="19" fill="#F3E6D0" font-family="Hud, ui-monospace, monospace" font-size="13">pranathesw@gmail.com</text>
+  <rect width="189" height="28" fill="#102028" stroke="#1C2E3A"/>
+  <rect x="8" y="11" width="6" height="6" fill="#00F5D4"/>
+  <text x="20" y="19" fill="#D5FFF8" font-family="Hud, ui-monospace, monospace" font-size="13">pranathesw@gmail.com</text>
 
 </svg>
