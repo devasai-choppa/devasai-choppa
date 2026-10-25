@@ -35,7 +35,7 @@ I turn regulated data into pipelines, reports, and AI tools people can check. Op
 
 ## Engineering
 
-Raw files land in DuckDB. dbt builds the mart. On ClearBed, a later outcome is kept off the admission snapshot. Leakage, too many empty fields, or too few stays stops the build.
+Raw files land in DuckDB. dbt builds the mart. A build can split into queries and checks, then join again. A window can fold many records into one row. On ClearBed, a later outcome is kept off the admission snapshot. Leakage, too many empty fields, or too few stays stops the build.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
@@ -45,6 +45,16 @@ Raw files land in DuckDB. dbt builds the mart. On ClearBed, a later outcome is k
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/gate-dark.svg">
   <img src="assets/gate-light.svg" alt="Quality gate. A later outcome moves toward the admission snapshot and stops. Leakage, nulls, or too few stays stop the ClearBed build. Diagram, not a test result." width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dag-dark.svg">
+  <img src="assets/dag-light.svg" alt="Build graph. Files split into SQL queries and tests, then join in dbt before the mart. Diagram, not a live run." width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/window-dark.svg">
+  <img src="assets/window-light.svg" alt="Streaming window. Records slide through a frame and leave as one row. Diagram, not a measured stream." width="100%">
 </picture>
 
 <picture>
