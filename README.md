@@ -48,13 +48,13 @@ Raw files land in DuckDB. dbt builds the mart. A build can split into queries an
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/dag-dark.svg">
-  <img src="assets/dag-light.svg" alt="Build graph. Files split into SQL queries and tests, then join in dbt before the mart. Diagram, not a live run." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/build-graph-dark.svg">
+  <img src="assets/build-graph-light.svg" alt="Build graph. Files split into SQL queries and tests, then join in dbt before the mart. Diagram, not a live run." width="100%">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/window-dark.svg">
-  <img src="assets/window-light.svg" alt="Streaming window. Records slide through a frame and leave as one row. Diagram, not a measured stream." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/record-window-dark.svg">
+  <img src="assets/record-window-light.svg" alt="Streaming window. Records slide through a frame and leave as one row. Diagram, not a measured stream." width="100%">
 </picture>
 
 <picture>
@@ -211,8 +211,8 @@ Tells you what a hospital published for a procedure, whether a provider looks in
 <td width="60%" valign="top">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/brain-eeg-dark.svg">
-  <img src="assets/brain-eeg-light.svg" alt="Wireframe brain and five EEG channels. Noisy traces align, then separate. Designed geometry, not a recording." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/neuro-mesh-dark.svg">
+  <img src="assets/neuro-mesh-light.svg" alt="Neural mesh in three-quarter view and five EEG channels. Noisy traces align, then separate. Designed geometry, not a recording." width="100%">
 </picture>
 
 </td>
