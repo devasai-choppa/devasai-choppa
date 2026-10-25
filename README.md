@@ -3,7 +3,7 @@
   <img src="assets/hero-hud-light.svg" alt="Devasai Pranatheswar Choppa. Data Analyst and Engineer at NextGenTek USA, Boston. Healthcare data, SQL, Python, ETL, and RAG. Open to work in the United States." width="100%">
 </picture>
 
-Data Analyst and Engineer · NextGenTek USA · Boston, Massachusetts  
+Data Analyst · NextGenTek USA · Boston, Massachusetts  
 Healthcare data, SQL, Python, ETL · AI, LLMs, and RAG  
 MS Analytics, Northeastern · B.Tech Computer Science, Lendi / JNTU
 
