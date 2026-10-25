@@ -1,10 +1,13 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-hud-dark.svg">
-  <img src="assets/hero-hud-light.svg" alt="Devasai Pranatheswar Choppa. Data Analyst at NextGenTek USA, Boston. Healthcare data and applied AI." width="100%">
+  <img src="assets/hero-hud-light.svg" alt="Devasai Pranatheswar Choppa. Data Analyst and Engineer at NextGenTek USA, Boston. Healthcare data, SQL, Python, ETL, and RAG. Open to work in the United States." width="100%">
 </picture>
 
-Data Analyst at NextGenTek USA · Boston  
-MS Analytics (Applied Machine Intelligence), Northeastern · B.Tech CS, Lendi / JNTU
+Data Analyst and Engineer · NextGenTek USA · Boston, Massachusetts  
+Healthcare data, SQL, Python, ETL · AI, LLMs, and RAG  
+MS Analytics, Northeastern · B.Tech Computer Science, Lendi / JNTU
+
+I turn regulated data into pipelines, reports, and AI tools people can check. Open to Data Analyst, Data Engineer, Analytics Engineer, and AI Engineer roles in the United States, on-site, hybrid, or remote.
 
 <a href="mailto:pranathesw@gmail.com">
   <picture>
@@ -207,6 +210,38 @@ The six cards are the short version. This is the same work, with the limits writ
   <img src="assets/divider-datastream-light.svg" alt="" width="100%">
 </picture>
 
+## Experience
+
+**Data Analyst** · NextGenTek USA Inc · Full-time · Jun 2026–present · Boston · Remote
+
+The firm is headquartered in Dallas. I gather and check data from internal systems, write SQL across those systems, resolve discrepancies, and build the reports teams use to track performance. I work with engineering on how data moves through applications, APIs, and databases.
+
+**Public Health Intelligence Analyst** · Boston Public Health Commission · Internship · Jan 2025–Apr 2025 · Boston · Remote
+
+MS Analytics capstone with Northeastern. I analyzed 100,000+ HIPAA-regulated public-health records with Python and SQL, built prototypes for structured and unstructured language data, and presented the findings in Tableau. The reporting served the City of Boston, about 675,000 residents.
+
+**Generative AI Engineer Intern** · MassChallenge · Internship · Nov 2023–May 2024 · Boston · Remote
+
+MS experiential project with Northeastern. I wrote the annotation instructions and quality checks, then built a RAG pipeline for speech and text with LangChain, spaCy, and NLTK.
+
+**Machine Learning and Data Engineering Intern** · Pola IT Solutions · Internship · Mar 2021–May 2023 · Remote from India
+
+Models on e-commerce transactions with Python and scikit-learn. ETL for inventory, customers, and orders with SQL and pandas. The backend ran on AWS.
+
+**Volunteer Data Analyst** · Bright Mind · Aug 2025–Jun 2026
+
+Unpaid work for Bright Mind Enrichment and Schooling, a 501(c)(3). I cleaned data and tracked campaign metrics with SQL and R.
+
+Tools I use in this work, outside the repo orbit above: Tableau, Power BI, Snowflake, AWS, and Excel.
+
+## Education
+
+**Northeastern University** · MS Analytics · Sep 2023–Apr 2025 · 3.67/4  
+Applied Machine Intelligence.
+
+**Jawaharlal Nehru Technological University** · B.Tech Computer Science · Aug 2019–May 2023 · 3.5/4  
+Lendi Institute of Engineering and Technology.
+
 ## Research
 
 **Crop Yield Forecasting and Fertilizer Recommendation Using Voting Classifier.** IJRTI, June 2023. Third author, with B. Chakradhar, D. Sai Veena, and A. Vivek, while at Lendi Institute of Engineering and Technology. [PDF](https://www.ijrti.org/papers/IJRTI2306158.pdf)
@@ -252,7 +287,9 @@ No public RSS feed is connected yet.
 1. 💪 Opened PR [#2](https://github.com/devasai-choppa/CareTrace/pull/2) in [devasai-choppa/CareTrace](https://github.com/devasai-choppa/CareTrace)
 <!--END_SECTION:activity-->
 
-## Open to Data and AI roles in Boston and remote
+## Open to work
+
+Data Analyst, Data Engineer, Analytics Engineer, and AI Engineer roles. United States. On-site, hybrid, or remote. Healthcare is the focus.
 
 <a href="mailto:pranathesw@gmail.com">
   <picture>
