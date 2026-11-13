@@ -323,7 +323,7 @@ No public RSS feed is connected yet.
 
 <!--RECENT_ACTIVITY-->
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#2](https://github.com/devasai-choppa/CareTrace/pull/2) in [devasai-choppa/CareTrace](https://github.com/devasai-choppa/CareTrace)
+1. 💪 Opened PR [#1](https://github.com/devasai-choppa/xsection-nn-alpha/pull/1) in [devasai-choppa/xsection-nn-alpha](https://github.com/devasai-choppa/xsection-nn-alpha)
 <!--END_SECTION:activity-->
 
 ## Open to work
